@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    position: absolute;
+}
+
+.hero-section {
+    background-image: url(https://assets-global.website-files.com/6398605b5541055872b8d486/639af71b5d394f6a82e1c7c4_Rectangle%201121.webp);
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    color: white;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo {
+    font-family: serif;
+    font-size: 1.9rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+
+}
+
+.navbar {
+    padding-top: 12px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    color: black;
+}
+
+.rightbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rightbar ul li {
+    list-style: none;
+    padding: 22px;
+    font-size: 1.08rem;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+
+}
+/* Default state when the page loads */
+.wh {
+    color: white;
+  }
+  
+  .navbar.scrolled .wh {
+    color: black;
+  }
+  
+button {
+    color: white;
+}
+
+.menu {
+    background-color: #C8953F;
+    border: none;
+    font-family: 'Playfair Display', sans-serif;
+    padding: 10px 22px;
+    font-size: 1.5rem;
+}
+
+
+.rightbar{
+    color: white;
+}
+.menu:hover{      
+    background-color: #C8953F;
+    color: white;
+    border: 1px solid #C8953F;
+    animation: animate 4s infinite;  
+    }
+
+.main-page {
+    display: block;
+    padding: 200px 0px 40px;
+    padding-left: 146px;
+    min-width: 100vw;
+}
+
+.experiences {
+    display: flex;
+    width: 85vw;
+
+}
+
+.experiences h2 {
+    font-size: 4rem;
+    font-family: "Cormorant Garamond", serif;
+    padding: 0px 104px 11px 10px;
+    margin-top: 20px;
+    margin: 0px 20px;
+
+}
+
+.experiences p {
+    font-size: 1.04rem;
+    font-family: sans-serif;
+    padding: 12px;
+    margin-top: 20px;
+    margin: 0px 20px;
+
+}
+
+.mainHeading {
+    font-family: "Cormorant Garamond", serif;
+    line-height: 88px;
+    /* Adjusted line-height for two lines */
+    font-weight: 500;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin: 0px 0px 30px;
+    text-align: start;
+}
+
+
+
+.line {
+    width: 80%;
+    border: 0.5px solid rgba(255, 255, 255, 0.414);
+    margin: 12px;
+    border-radius: 100%;
+}
+
+.info {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 600px;
+
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.rm-button {
+    padding: 12px 35px;
+    color: black;
+    border-radius: 23px;
+    margin-left: 180px;
+    margin-right: 40px;
+    font-size: 1.3em;
+    font-family: "Jost", sans-serif;
+    background-color: white;
+    border: none;
+
+}
+
+.rser a:hover {
+    color: #C8953F;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.rser a {
+    color: white;
+    cursor: pointer;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+
+.ours {
+    background-color: white;
+    min-height: 70%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.right-Side img {
+    height: 400px;
+    width: 650px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.heading {
+    color: #C8953F;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.left-Side h1 {
+    font-family: "Cormorant Garamond", serif;
+    line-height: 80px;
+    /* Adjusted line-height for two lines */
+    font-weight: 500;
+    width: 500px;
+    padding-top: 20px;
+    font-size: 60px;
+    margin: 0px 0px 30px;
+    text-align: start;
+
+}
+
+.left-Side .info {
+    font-size: 1.2em;
+    width: 400px;
+    margin: 0px 0px 30px;
+    font-family: "Jost", sans-serif;
+}
+
+.left-Side ul {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.left-Side ul li {
+    padding-right: 40px;
+    font-family: "Jost", sans-serif;
+    color: #C8953F;
+    cursor: pointer;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.MM a {
+    color: black;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+
+}
+
+.our-desert {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.coffee-types {
+    min-height: 100%;
+    min-width: 100%;
+    margin-top: 150px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 228, 196, 0.315);
+
+}
+
+.Frappe {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(images/Frappe.png);
+    width: 550px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: darken;
+    background-size: cover;
+
+}
+
+.types div {
+    position: relative;
+    /* Required for absolute positioning of the icon */
+    z-index: 1;
+    color: whitesmoke;
+    font-family: "Jost", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Changed from 'end' to 'flex-end' */
+    align-items: flex-start;
+    /* Changed from 'start' to 'flex-start' */
+    padding: 20px;
+}
+
+.types div p {
+    width: 300px;
+    line-height: 1.4em;
+    font-size: 1.2rem;
+}
+
+.espresso {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(images/espresso.png);
+    width: 550px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slowbrew {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(images/slowbrew.png);
+    width: 550px;
+    mix-blend-mode: darken;
+
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.aeropress {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(images/aeropress.png);
+    width: 550px;
+    height: 350px;
+    mix-blend-mode: darken;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.types {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+.try-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.try-heading h1 {
+    font-family: "Cormorant Garamond", serif;
+    line-height: 80px;
+    /* Adjusted line-height for two lines */
+    font-weight: 500;
+    width: 500px;
+    padding-top: 20px;
+    font-size: 60px;
+    margin: 90px 10px 30px;
+    text-align: start;
+
+}
+
+.try-heading h3 {
+    margin: 10px 10px 30px;
+
+}
+
+
+
+.coffee-info {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.usd {
+    color: #C8953F;
+    padding: 10px 0px 10px;
+}
+
+
+.types div .plus-icon,.move div .plus-icon {
+    background-color: whitesmoke;
+    color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.app {
+    background: linear-gradient(to bottom, black, rgb(67, 37, 10));
+    min-height: 90%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app h1 {
+    font-family: "Cormorant Garamond", serif;
+    line-height: 80px;
+    font-weight: 500;
+    padding-top: 120px;
+    color: white;
+    font-size: 60px;
+    margin: 0px 0px 30px;
+    text-align: start;
+}
+
+.app p {
+    width: 900px;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 1.1rem;
+    color: white;
+    font-family: "Jost", sans-serif;
+    padding-bottom: 20px;
+}
+
+.App-button {
+    display: flex;
+}
+
+.App-button button {
+    color: black;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+    padding: 2px;
+    line-height: 2.1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.App-button button img {
+    width: 40px;
+}
+
+.App-button button .text {
+    line-height: 1.5em;
+}
+
+.App-button button h3 {
+    font-family: "Jost", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.App-button button span {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+}
+
+.app div {
+    position: relative;
+}
+
+.phone-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.phone-image {/* Adjust the margin as needed */
+    width: 48%; /* Adjust the width as needed */
+    max-width: 400px; /* Ensure a max width to maintain aspect ratio */
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items:center ;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 470px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.gallery h1{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: "Cormorant Garamond", serif;
+}
+.img-wrap img{
+margin: 20px;
+}
+.img-wrap {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+}
+.client-say{
+    font-size: 25px;
+    font-weight: 400;
+    color: #C8953F;
+    font-family: "Jost", sans-serif;
+}
+.testimonal{
+    font-size: 3.7rem;
+    font-weight: 400;
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 1100px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    column-gap:70px;
+    }
+    footer .menu-button{
+        background-color: #C8953F;
+        color: white;
+        padding:15px 30px;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        border: none;
+        margin-top: 25px;
+        border-bottom-right-radius:30px;
+        border-top-left-radius:30px;
+    }
+    .footer{
+        padding-bottom: 50px;
+        padding-top: 100px;
+        background-color: black;
+        color: white;
+        text-align: center;
+
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: white;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer h1{
+        font-size: 58px;
+        font-family: "Cormorant Garamond", serif;
+        line-height: 1.1em;
+        font-weight: 500;
+        width: 500px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .footer-left .foot-heading{
+        font-family: serif;
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+        font-family: 'serif';
+        font-weight: 400;
+        text-align: start;
+        text-transform: uppercase;
+    
+    }
+    .footer-left p{
+        line-height: 1.5em;
+        font-family: "Cormorant Garmond",sans-serif;
+        font-size: 17px;
+        width: 290px;
+        padding-top: 10px;
+        text-align: start;
+    }
+    .social-icons {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .social-icons i {
+        width: 27px;
+        height: 27px;
+        padding: 5px;
+        color: white;
+    }
+    
+    .footer nav ul {
+        list-style: none;
+        padding-top: 100px;
+        display: flex;
+        gap: 20px;
+        padding-bottom: 50px;
+        font-weight: 300;
+        font-size: 17px;
+        font-family: "Cormorant Garmond",sans-serif;
+    }
+    .bottom{
+        color: whitesmoke;
+        display: flex;
+        justify-content: space-between; /* Adjust space between left and right */
+        align-items: flex-start;
+        flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    
+    }
+    .footer nav ul li {
+            padding: 10px;
+    }
+    
+    .footer nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    footer .footer-right{
+        line-height: 1.6em;
+        font-size: 1.1rem;
+        width: 50%;
+        font-family: "Cormorant Garmond",sans-serif;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .menu-button:hover {
+        background-color: white;
+        color : #C8953F;
+        border: 1px solid #C8953F;
+        transition: ease-out ;
+        transition-duration: 2S;
+        animation: animate 4s infinite; /*Animation continuously applied*/
+      }
+  
+      @keyframes animate {
+        0% { background-color: white;
+        color:#C8953F }
+        50% { background-color: white; 
+        color:#C8953F}
+      }
+      
+
+      /* ABOUT PAGE STYLING  */
+
+
+      .about-section {
+        background-image: url(https://assets-global.website-files.com/6398605b5541055872b8d486/639af71b5d394f6a82e1c7c4_Rectangle%201121.webp);
+        top: 0;
+        min-width: 100vw;
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        color: white;
+        background-position: 50%;
+        background-size: cover;
+        overflow-x: hidden;
+        background-attachment: fixed;
+        }
+    
+    .move {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+    .marque{
+        padding: 120px 0px;
+        overflow-x: hidden;
+
+    }
+    .marques {
+        min-width: 30%; /* Ensures each coffee section takes up 30% of the width */
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .CaffeLatte, .Mocha {
+        mix-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .CaffeLatte {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(./images/latte.webp);
+    }
+    
+    .Mocha {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(./images/COFFEE.webp);
+    }
+    
+    .move .marques {
+        transform: translateX(-200%); /* Slight translation on hover for visual effect */
+    }
+    
+
+    
+    .usd {
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .marques h1,.marques p{
+        color: white;
+        padding-left: 20px;
+        width: 25vw;
+    }
+    .marques h1{
+        padding-top: 220px;
+
+    }
+    .plus-icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .benefits{
+        padding: 120px 120px 0 120px;
+    }
+    .containerBenefits{
+        display: flex;
+    }
+    .containerBenefits .rightBox{
+        background-color: #C8953F;
+        width: 45vw;
+    }
+    .benefits img{
+        width: 92%;
+    }
+    .locations{
+    padding: 100px 120px;
+    }
+    .locations h1{
+        font-size: 60px;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family:"Cormorant Garamond", sans-serif;
+        font-weight: 400;
+        
+    }
+    .area{
+        display: flex;
+        gap: 40px;
+    }
+    .area h3{
+        font-family: "Jost",sans-serif;
+        font-weight: 500;
+        padding: 10px 0px;
+    }
+    .location {
+        font-size: 22px;
+    }
+    .area  p{
+        font-family: "Jost",sans-serif;
+        width: 20vw;
+    }
+    /* Main container for the blog posts */
+    .blog-section{
+        background-image: url(https://cdn.prod.website-files.com/6398605b5541055872b8d486/63a9bdf3a014a57abb14b5be_cyril.webp);
+        background-position: center;
+        margin-bottom: 120px;
+    }
+.blog-posts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto ;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 120px auto;
+    max-width: 1200px;
+}
+
+/* Individual blog post styling */
+.post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    max-width: 130%; /* Ensures the post takes up to 30% of the row */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Post image styling */
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+/* Content of each post */
+.post-content {
+    padding: 15px;
+    font-family: "Jost",sans-serif;
+}
+
+.post-content .date {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.post-content h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+
+}
+
+.post-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+    font-weight: 400;
+}
+
+/* Read more link styling */
+.post-content .read-more {
+    color: #D2691E; /* Coffee-like color */
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.post-content .read-more:hover {
+    border-bottom: 1px solid #D2691E;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-posts {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .post {
+        max-width: 100%;
+    }
+}
+
+.menu-section{
+    background-image: url(./images/menu.webp);
+    background-position: center;
+    object-fit: cover;
+}
+.menu-content{
+    display: flex;
+    justify-content: center;
+    padding: 120px 0px;
+    min-width: 100%;
+}
+ .leftSideMenu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+  
+
+}
+.rightSideMenu {
+    width: 250px;
+    padding: 20px;
+    font-family: "Jost",sans-serif;
+    margin-right: 20px;
+}
+
+.ourCoffe {
+    color: #c89f6b;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color:#C8953F;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 18px;
+    /* vertical-align: middle; */
+}
+
+.icehot, .sugar, .milk {
+    margin-top: 20px;
+}
+
+.icehot label, .sugar label, .milk label {
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+.all-group {
+    margin-bottom: 20px;
+}
+
+.all-group label {
+    color: #c89f6b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.card-content p{
+    font-family: "Jost",sans-serif;
+    width: 20vw;
+    font-size: 1em;
+    font-weight: 450;
+}
+.typeOFcoffe div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid #5555554c;
+    padding-bottom: 20px;
+}
+.typeOFcoffe label{
+    font-size: 1.2rem;
+    font-family: "Jost",sans-serif;
+}
+input[type="checkbox"] {
+    /* Adjust the size */
+    width: 25px;
+    height: 25px;
+    /* Optional: Customize the look */
+    cursor: pointer;
+}
+.leftSideMenu h3{
+    font-family: "Jost",sans-serif;
+    font-weight: 500;
+    padding: 2px 0px;
+    font-size: 1.2rem;
+
+}
+.leftSideMenu .plus-icon{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 840px;
+    margin-left: 200px;
+}
+.price{
+    color: #C8953F;
+    font-family: "Jost",sans-serif;
+}
